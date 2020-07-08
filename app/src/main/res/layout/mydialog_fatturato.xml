@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/CloseDialogImageView"
+        android:layout_toEndOf="@id/CloseDialogImageView"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="435dp"
+        android:layout_below="@id/scrollable"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <TextView
+            android:id="@+id/text_agg_spesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/aggiungi_a_fatturato"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/data_fattura"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:hint="@string/data"
+            android:textColorHint="#FD000000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/data_fattura1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nome_cliente0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nome_cliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nome" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descrizione"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="#FD000000">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descrizione0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/descrizione"
+                    android:textColorHint="#000000" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/importo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="#000000">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/importo0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/importo" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/salva_in_fatturato"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:background="#868686"
+            android:text="@string/aggiungi_a_fatturato"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/CloseDialogImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:drawable/btn_dialog"
+        android:contentDescription="@string/textclose"></ImageView>
+
+</RelativeLayout>

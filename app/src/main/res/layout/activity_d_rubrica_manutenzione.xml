@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".dRubricaManutenzione">
+
+    <ImageView
+        android:id="@+id/logo_rubrica"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/nome_rubrica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomucca" />
+
+    <TextView
+        android:id="@+id/nome_rubrica"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:gravity="center"
+        android:text="@string/s_a_f_milky"
+        android:textColor="#631718"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sottotitolo_rubrica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_rubrica" />
+
+    <TextView
+        android:id="@+id/sottotitolo_rubrica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/smart_artificial_farming_milky"
+        android:textColor="#85161E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_Rubrica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_rubrica" />
+
+    <ImageView
+        android:id="@+id/image_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/sottotitolo_rubrica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_rubrica"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <LinearLayout
+        android:id="@+id/barra_botton1"
+        android:layout_width="413dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_deposito2"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E9716A"
+            android:text="@string/deposito"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_manutenzione2"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#868686"
+            android:text="@string/manutenzione"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_ordini2"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E9716A"
+            android:text="@string/gestione_ordini"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_servizi2"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E9716A"
+            android:text="@string/gestione_servizi"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_contabilità2"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E9716A"
+            android:text="@string/contabilit"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_Rubrica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/rubrica"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text_ditte"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sottotitolo_rubrica" />
+
+    <TextView
+        android:id="@+id/text_ditte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/ditte_di_manutenzione"
+        android:textColor="#FA030303"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lista"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_rubrica"
+        app:layout_constraintTop_toBottomOf="@+id/text_Rubrica" />
+
+    <ImageView
+        android:id="@+id/image_rubrica"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/lista"
+        app:layout_constraintEnd_toStartOf="@+id/text_ditte"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sottotitolo_rubrica"
+        app:srcCompat="@drawable/rubrica" />
+
+    <ImageView
+        android:id="@+id/image_aggiungi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/barra_botton1"
+        app:layout_constraintEnd_toStartOf="@+id/image_rimuovi"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lista"
+        app:srcCompat="@drawable/aggiungi" />
+
+    <ImageView
+        android:id="@+id/image_telefono"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/barra_botton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_rimuovi"
+        app:layout_constraintTop_toBottomOf="@id/lista"
+        app:srcCompat="@drawable/telefono" />
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="5dp"
+        android:cacheColorHint="#020202"
+        android:foregroundGravity="center"
+        android:listSelector="@drawable/selection_list"
+        app:layout_constraintBottom_toTopOf="@+id/image_aggiungi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_ditte" />
+
+    <ImageView
+        android:id="@+id/image_rimuovi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/rimuovi"
+        app:layout_constraintBottom_toTopOf="@+id/barra_botton1"
+        app:layout_constraintEnd_toStartOf="@+id/image_telefono"
+        app:layout_constraintStart_toEndOf="@+id/image_aggiungi"
+        app:layout_constraintTop_toBottomOf="@+id/lista" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

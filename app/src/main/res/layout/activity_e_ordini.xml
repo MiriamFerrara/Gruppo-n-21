@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".eOrdini">
+
+    <ImageView
+        android:id="@+id/logo_ordini"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/nome_ordini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomucca" />
+
+    <TextView
+        android:id="@+id/nome_ordini"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:gravity="center"
+        android:text="@string/s_a_f_milky"
+        android:textColor="#631718"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sottotitolo_ordini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_ordini" />
+
+    <TextView
+        android:id="@+id/sottotitolo_ordini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="@string/smart_artificial_farming_milky"
+        android:textColor="#85161E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_ordini" />
+
+    <ImageView
+        android:id="@+id/image_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/sottotitolo_ordini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/logo_ordini"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <LinearLayout
+        android:id="@+id/barra_botton1"
+        android:layout_width="413dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_deposito3"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E9716A"
+            android:text="@string/deposito"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_manutenzione3"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E9716A"
+            android:text="@string/manutenzione"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_ordini3"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#868686"
+            android:text="@string/gestione_ordini"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_servizi3"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E9716A"
+            android:text="@string/gestione_servizi"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_contabilità3"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#E9716A"
+            android:text="@string/contabilit"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenitore_ordini"
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/aggiungi_ordine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titolo_ordini">
+
+        <ListView
+            android:id="@+id/ordini_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="@drawable/selection_list"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/aggiungi_ordine"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/barra_botton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenitore_ordini"
+        app:srcCompat="@drawable/cont_aggiungi" />
+
+    <ImageView
+        android:id="@+id/rimuovi_ordine"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/barra_botton1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contenitore_ordini"
+        app:srcCompat="@drawable/ordini_rimuovi" />
+
+    <TextView
+        android:id="@+id/titolo_ordini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/lista_ordini"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/contenitore_ordini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sottotitolo_ordini" />
+</androidx.constraintlayout.widget.ConstraintLayout>

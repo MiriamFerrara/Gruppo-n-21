@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".bHomePage">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/nome_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomucca" />
+
+    <TextView
+        android:id="@+id/nome_home"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:gravity="center"
+        android:text="@string/s_a_f_milky"
+        android:textColor="#631718"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sottotitolo_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+
+    <TextView
+        android:id="@+id/sottotitolo_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:text="@string/smart_artificial_farming_milky"
+        android:textColor="#85161E"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome_home" />
+
+    <ImageView
+        android:id="@+id/image_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/sottotitolo_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user"
+        android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="165dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sottotitolo_home">
+
+        <Button
+            android:id="@+id/button_deposito"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:backgroundTint="#E9716A"
+            android:gravity="center"
+            android:text="@string/deposito"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_manutenzione"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:backgroundTint="#E9716A"
+            android:gravity="center"
+            android:text="@string/manutenzione"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_ordini"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:backgroundTint="#E9716A"
+            android:gravity="center"
+            android:text="@string/gestione_ordini"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_servizi"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:backgroundTint="#E9716A"
+            android:gravity="center"
+            android:text="@string/gestione_servizi"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_contabilità"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:backgroundTint="#E9716A"
+            android:gravity="center"
+            android:text="@string/contabilit"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

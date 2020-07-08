@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/immagine"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/nomeContenitore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:text="@string/contenitore_1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/litriContenitore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/_1000_litri"
+        android:textColor="#F8000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/temperaturaContenitore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="45dp"
+        android:text="@string/_4_c"
+        android:textColor="#FA000000"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/rimuoviContenitore"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="80dp"
+        android:background="#868686"
+        android:text="@string/rimuovi_contenitore"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+
